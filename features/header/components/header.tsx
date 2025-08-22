@@ -3,15 +3,13 @@
 import Link from "next/link";
 
 import { Zap, BarChart3, Settings, Sun, Moon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/features/ui/components/button";
 import { useTheme } from "next-themes";
 import { ThemeToggle } from "./theme-toggle";
 
 export default function Header() {
-  const { setTheme, theme } = useTheme();
-  console.log(useTheme());
   return (
-    <header className="w-full border-b bg-background/50">
+    <header className="w-full border-b border-white/10 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl backdrop-saturate-150">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
@@ -28,7 +26,7 @@ export default function Header() {
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-6">
             <Link
-              href={"/"}
+              href={"#features"}
               className="flex items-center gap-2 text-sm text-neutral-400 hover:text-foreground transition-colors"
             >
               <Zap className="w-4 h-4" />
