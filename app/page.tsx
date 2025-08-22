@@ -1,9 +1,9 @@
-import Header from "@/features/header/Header";
+import Header from "../features/header/components/header";
 
 export default function Home() {
   return (
     <main>
-      <Header/>
+      <Header />
     </main>
   );
 }
