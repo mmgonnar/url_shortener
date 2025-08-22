@@ -4,7 +4,6 @@ import Link from "next/link";
 
 import { Zap, BarChart3, Settings, Sun, Moon } from "lucide-react";
 import { Button } from "@/features/ui/components/button";
-import { useTheme } from "next-themes";
 import { ThemeToggle } from "./theme-toggle";
 
 export default function Header() {
